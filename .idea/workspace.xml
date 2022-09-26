@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="inquire bean by name ,type, and by throw exceptions">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="find Bean by type but type is duplicated,&#10;find all of bean by any type">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,31 +92,8 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationContextSameBeanFindTest.findAllBeanByType">
-    <configuration name="ApplicationContexBasicFindTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hello.core.beanfind.ApplicationContexBasicFindTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ApplicationContexBasicFindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApplicationContextExtendsFindTest.findAllBeanByObjectType">
+    <configuration name="ApplicationContextExtendsFindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
@@ -125,13 +102,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContexBasicFindTest" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextSameBeanFindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationContextExtendsFindTest.findAllBeanByObjectType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +117,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextSameBeanFindTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="findAllBeanByObjectType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextExtendsFindTest.findAllBeanByParentType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.beanfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="findAllBeanByParentType" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.findAllBeanByObjectType" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.findAllBeanByParentType" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest" />
         <item itemvalue="JUnit.ApplicationContextSameBeanFindTest.findAllBeanByType" />
         <item itemvalue="JUnit.ApplicationContextSameBeanFindTest.findBeanByName" />
-        <item itemvalue="JUnit.ApplicationContextSameBeanFindTest" />
-        <item itemvalue="JUnit.ApplicationContexBasicFindTest" />
-        <item itemvalue="Gradle.ApplicationContexBasicFindTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +219,7 @@
       <workItem from="1664150770031" duration="3169000" />
       <workItem from="1664172311876" duration="1118000" />
       <workItem from="1664173457461" duration="1946000" />
-      <workItem from="1664201526502" duration="1519000" />
+      <workItem from="1664201526502" duration="3435000" />
     </task>
     <task id="LOCAL-00001" summary="trasforming to Spring">
       <created>1664096607845</created>
@@ -248,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664175522176</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="find Bean by type but type is duplicated,&#10;find all of bean by any type">
+      <created>1664203350211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664203350211</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +270,8 @@
     <MESSAGE value="trasforming to Spring" />
     <MESSAGE value="show spring bean" />
     <MESSAGE value="inquire bean by name ,type, and by throw exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="inquire bean by name ,type, and by throw exceptions" />
+    <MESSAGE value="find Bean by type but type is duplicated,&#10;find all of bean by any type" />
+    <option name="LAST_COMMIT_MESSAGE" value="find Bean by type but type is duplicated,&#10;find all of bean by any type" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
