@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="">
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="trasforming to Spring">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicaionContextinfoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -65,6 +66,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Cdv12pYLQvrW4M9AZv08VOwBVx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -87,7 +91,7 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.OrderApp">
+  <component name="RunManager" selected="Gradle.ApplicaionContextinfoTest.findApplicationBean">
     <configuration name="MemberApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello.core.MemberApp" />
       <module name="core.main" />
@@ -114,6 +118,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApplicaionContextinfoTest.findAllBean (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hello.core.beanfind.ApplicaionContextinfoTest.findAllBean&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApplicaionContextinfoTest.findApplicationBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hello.core.beanfind.ApplicaionContextinfoTest.findApplicationBean&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RateDiscountPolicyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
@@ -125,38 +175,6 @@
       <option name="PACKAGE_NAME" value="hello.core.discount" />
       <option name="MAIN_CLASS_NAME" value="hello.core.discount.RateDiscountPolicyTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RateDiscountPolicyTest.vip_o" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.discount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.core.discount" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.discount.RateDiscountPolicyTest" />
-      <option name="METHOD_NAME" value="vip_o" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RateDiscountPolicyTest.vip_x" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.discount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.core.discount" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.discount.RateDiscountPolicyTest" />
-      <option name="METHOD_NAME" value="vip_x" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ApplicaionContextinfoTest.findApplicationBean" />
+        <item itemvalue="Gradle.ApplicaionContextinfoTest.findAllBean (1)" />
         <item itemvalue="Application.OrderApp" />
         <item itemvalue="Application.MemberApp" />
         <item itemvalue="JUnit.RateDiscountPolicyTest" />
-        <item itemvalue="JUnit.RateDiscountPolicyTest.vip_o" />
-        <item itemvalue="JUnit.RateDiscountPolicyTest.vip_x" />
       </list>
     </recent_temporary>
   </component>
@@ -203,12 +221,37 @@
       <workItem from="1663741059273" duration="296000" />
       <workItem from="1663741590334" duration="1850000" />
       <workItem from="1663759981079" duration="8000" />
-      <workItem from="1664093384700" duration="1960000" />
+      <workItem from="1664093384700" duration="2605000" />
+      <workItem from="1664112721740" duration="595000" />
+      <workItem from="1664150770031" duration="2532000" />
     </task>
+    <task id="LOCAL-00001" summary="trasforming to Spring">
+      <created>1664096607845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664096607845</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="trasforming to Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="trasforming to Spring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
