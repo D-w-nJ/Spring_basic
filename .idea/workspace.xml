@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="부모 타입으로 빈 조회했을 때 - 자식들 딸려나옴&#10; (Object 타입이면 모두 딸려나옴)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beandefinition/BeanDefinitionTest.java" afterDir="false" />
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="스프링 빈 설정 메타 정보 - BeanDefinition">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +90,7 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BeanDefinitionTest">
+  <component name="RunManager" selected="JUnit.SingletonTest.pureContainer">
     <configuration name="ApplicaionContextinfoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,29 +105,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;hello.core.beanfind.ApplicaionContextinfoTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ApplicaionContextinfoTest.findApplicationBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hello.core.beanfind.ApplicaionContextinfoTest.findApplicationBean&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,6 +175,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingletonTest.pureContainer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.singleton" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.singleton.SingletonTest" />
+      <option name="METHOD_NAME" value="pureContainer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_basic" />
       <method v="2">
@@ -220,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingletonTest.pureContainer" />
         <item itemvalue="JUnit.BeanDefinitionTest" />
         <item itemvalue="Gradle.BeanDefinitionTest" />
         <item itemvalue="Gradle.BeanDefinitionTest.findApplicationBean" />
         <item itemvalue="Gradle.ApplicaionContextinfoTest" />
-        <item itemvalue="Gradle.ApplicaionContextinfoTest.findApplicationBean" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664205167883</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="스프링 빈 설정 메타 정보 - BeanDefinition">
+      <created>1664778297515</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664778297515</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +306,8 @@
     <MESSAGE value="inquire bean by name ,type, and by throw exceptions" />
     <MESSAGE value="find Bean by type but type is duplicated,&#10;find all of bean by any type" />
     <MESSAGE value="부모 타입으로 빈 조회했을 때 - 자식들 딸려나옴&#10; (Object 타입이면 모두 딸려나옴)" />
-    <option name="LAST_COMMIT_MESSAGE" value="부모 타입으로 빈 조회했을 때 - 자식들 딸려나옴&#10; (Object 타입이면 모두 딸려나옴)" />
+    <MESSAGE value="스프링 빈 설정 메타 정보 - BeanDefinition" />
+    <option name="LAST_COMMIT_MESSAGE" value="스프링 빈 설정 메타 정보 - BeanDefinition" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
