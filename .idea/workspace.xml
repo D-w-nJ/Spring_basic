@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="스프링 없는 순수 DI 컨테이너를 사용하면 요청이 올때마다 객체를 생성해야 한다 -트래픽 과도(웹 어플리케이션 개발에 있어서)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonService.java" afterDir="false" />
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="xml 기반의 컨테이너 설정, 자바 코드 말고도 다른타입의 파일로도 컨테이너 생성 가능">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" afterDir="false" />
     </list>
@@ -70,14 +69,6 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -91,30 +82,7 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingletonTest">
-    <configuration name="BeanDefinitionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hello.core.beandefinition.BeanDefinitionTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SingletonTest.springContainer">
     <configuration name="BeanDefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
@@ -177,6 +145,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingletonTest.springContainer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.singleton" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.singleton.SingletonTest" />
+      <option name="METHOD_NAME" value="springContainer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_basic" />
       <method v="2">
@@ -199,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingletonTest.springContainer" />
         <item itemvalue="JUnit.SingletonTest" />
         <item itemvalue="JUnit.SingletonTest.SingletonService" />
         <item itemvalue="JUnit.SingletonTest.pureContainer" />
         <item itemvalue="JUnit.BeanDefinitionTest" />
-        <item itemvalue="Gradle.BeanDefinitionTest" />
       </list>
     </recent_temporary>
   </component>
