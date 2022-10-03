@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="xml 기반의 컨테이너 설정, 자바 코드 말고도 다른타입의 파일로도 컨테이너 생성 가능">
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/StatefulServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/SingletonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +42,9 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -69,11 +70,16 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="hello.core.singleton" />
       <recent name="hello.core.discount" />
     </key>
   </component>
@@ -82,22 +88,7 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingletonTest.springContainer">
-    <configuration name="BeanDefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.beandefinition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.core.beandefinition" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beandefinition.BeanDefinitionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StatefulServiceTest.statefulServiceSingleton">
     <configuration name="SingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
@@ -161,6 +152,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StatefulServiceTest.statefulServiceSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.singleton" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.singleton.StatefulServiceTest" />
+      <option name="METHOD_NAME" value="statefulServiceSingleton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_basic" />
       <method v="2">
@@ -183,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StatefulServiceTest.statefulServiceSingleton" />
         <item itemvalue="JUnit.SingletonTest.springContainer" />
         <item itemvalue="JUnit.SingletonTest" />
         <item itemvalue="JUnit.SingletonTest.SingletonService" />
         <item itemvalue="JUnit.SingletonTest.pureContainer" />
-        <item itemvalue="JUnit.BeanDefinitionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664779012413</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함">
+      <created>1664787866853</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664787866853</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +299,8 @@
     <MESSAGE value="부모 타입으로 빈 조회했을 때 - 자식들 딸려나옴&#10; (Object 타입이면 모두 딸려나옴)" />
     <MESSAGE value="스프링 빈 설정 메타 정보 - BeanDefinition" />
     <MESSAGE value="스프링 없는 순수 DI 컨테이너를 사용하면 요청이 올때마다 객체를 생성해야 한다 -트래픽 과도(웹 어플리케이션 개발에 있어서)" />
-    <option name="LAST_COMMIT_MESSAGE" value="스프링 없는 순수 DI 컨테이너를 사용하면 요청이 올때마다 객체를 생성해야 한다 -트래픽 과도(웹 어플리케이션 개발에 있어서)" />
+    <MESSAGE value="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함" />
+    <option name="LAST_COMMIT_MESSAGE" value="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
