@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration //app의 설정정보
 public class AppConfig {
 
+    // 함수가 호출될 떄마다 new로 객체가 생성됨 -> 싱글톤이 해제? NO, AppConfig를 상속받아 새로만든 클래스에서 객체가 있다면 생략,
+    // 없다면 새로 생성하는 방식으로 싱글톤 보장
+
     @Bean // 스프링 컨테이너에 등록이 됨
     public MemberService memberService() {
         return new MemberserviceImpl(memberRepository());
