@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="@Configuration과 싱글톤, CGLIB기술">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/AutoAppConfigTest.java" afterDir="false" />
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="@Bean 없이 자동으로 Bean 등록 - @ComponentScan">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberserviceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +221,7 @@
       <workItem from="1664253187599" duration="2795000" />
       <workItem from="1664843334221" duration="599000" />
       <workItem from="1664858846337" duration="597000" />
-      <workItem from="1664869084066" duration="1944000" />
+      <workItem from="1664869084066" duration="3630000" />
     </task>
     <task id="LOCAL-00001" summary="trasforming to Spring">
       <created>1664096607845</created>
@@ -298,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664793091999</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="@Bean 없이 자동으로 Bean 등록 - @ComponentScan">
+      <created>1664872144272</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664872144272</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +328,8 @@
     <MESSAGE value="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함" />
     <MESSAGE value="싱글톤 방식의 주의점 - 공유필드로 인한 값 변경" />
     <MESSAGE value="@Configuration과 싱글톤, CGLIB기술" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Configuration과 싱글톤, CGLIB기술" />
+    <MESSAGE value="@Bean 없이 자동으로 Bean 등록 - @ComponentScan" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Bean 없이 자동으로 Bean 등록 - @ComponentScan" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
