@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="싱글톤 방식의 주의점 - 공유필드로 인한 값 변경">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/singleton/ConfigurationSingletonTest.java" afterDir="false" />
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="@Configuration과 싱글톤, CGLIB기술">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/AutoAppConfigTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberserviceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +75,10 @@
     <option name="showModules" value="false" />
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -90,7 +94,23 @@
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConfigurationSingletonTest.configurationDeep">
+  <component name="RunManager" selected="JUnit.AutoAppConfigTest.basicScan">
+    <configuration name="AutoAppConfigTest.basicScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.scan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.scan" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.scan.AutoAppConfigTest" />
+      <option name="METHOD_NAME" value="basicScan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigurationSingletonTest.configurationDeep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
@@ -119,21 +139,6 @@
       <option name="MAIN_CLASS_NAME" value="hello.core.singleton.ConfigurationSingletonTest" />
       <option name="METHOD_NAME" value="configurationTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.singleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.core.singleton" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.singleton.SingletonTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AutoAppConfigTest.basicScan" />
         <item itemvalue="JUnit.ConfigurationSingletonTest.configurationDeep" />
         <item itemvalue="JUnit.ConfigurationSingletonTest.configurationTest" />
         <item itemvalue="JUnit.StatefulServiceTest.statefulServiceSingleton" />
         <item itemvalue="JUnit.SingletonTest.springContainer" />
-        <item itemvalue="JUnit.SingletonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +224,9 @@
       <workItem from="1664173457461" duration="1946000" />
       <workItem from="1664201526502" duration="4197000" />
       <workItem from="1664253187599" duration="2795000" />
+      <workItem from="1664843334221" duration="599000" />
+      <workItem from="1664858846337" duration="597000" />
+      <workItem from="1664869084066" duration="1944000" />
     </task>
     <task id="LOCAL-00001" summary="trasforming to Spring">
       <created>1664096607845</created>
@@ -283,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664789549091</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="@Configuration과 싱글톤, CGLIB기술">
+      <created>1664793091999</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664793091999</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +325,8 @@
     <MESSAGE value="스프링 없는 순수 DI 컨테이너를 사용하면 요청이 올때마다 객체를 생성해야 한다 -트래픽 과도(웹 어플리케이션 개발에 있어서)" />
     <MESSAGE value="싱글톤 컨테이너 - 싱글톤 코드 없어도 스프링에서 싱글톤 방식을 사용함" />
     <MESSAGE value="싱글톤 방식의 주의점 - 공유필드로 인한 값 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="싱글톤 방식의 주의점 - 공유필드로 인한 값 변경" />
+    <MESSAGE value="@Configuration과 싱글톤, CGLIB기술" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Configuration과 싱글톤, CGLIB기술" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

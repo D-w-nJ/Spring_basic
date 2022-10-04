@@ -2,7 +2,7 @@ package hello.core.singleton;
 
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberserviceImpl;
-import hello.core.order.AppConfig;
+import hello.core.AppConfig;
 import hello.core.order.OrderServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -38,7 +38,7 @@ public class ConfigurationSingletonTest {
         AppConfig bean = ac.getBean(AppConfig.class);
 
         System.out.println("bean = " + bean.getClass());
-        //값이 bean = class hello.core.order.AppConfig$$EnhancerBySpringCGLIB$$a41bd21e
+        //값이 bean = class hello.core.AppConfig$$EnhancerBySpringCGLIB$$a41bd21e
         //같이 그냥 클래스가 아닌것을 볼 수 있다.
 
         /*
