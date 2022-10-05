@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="@Bean 없이 자동으로 Bean 등록 - @ComponentScan">
+    <list default="true" id="3c0bce71-e1b6-42a5-b240-397b8bb02731" name="Changes" comment="탐색 위치 설정 - @ComponentScan(basePackages), 스캔 대상">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/BeanA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/BeanB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/ComponentFilterAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyExcludeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/scan/filter/MyIncludeComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +47,7 @@
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -83,13 +88,16 @@
       <recent name="hello.core.singleton" />
       <recent name="hello.core.discount" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hello.core.scan.filter" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="main" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AutoAppConfigTest.basicScan">
+  <component name="RunManager" selected="JUnit.ComponentFilterAppConfigTest.filterScan">
     <configuration name="AutoAppConfigTest.basicScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
@@ -101,6 +109,22 @@
       <option name="PACKAGE_NAME" value="hello.core.scan" />
       <option name="MAIN_CLASS_NAME" value="hello.core.scan.AutoAppConfigTest" />
       <option name="METHOD_NAME" value="basicScan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComponentFilterAppConfigTest.filterScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.scan.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.scan.filter" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.scan.filter.ComponentFilterAppConfigTest" />
+      <option name="METHOD_NAME" value="filterScan" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,22 +157,6 @@
       <option name="PACKAGE_NAME" value="hello.core.singleton" />
       <option name="MAIN_CLASS_NAME" value="hello.core.singleton.ConfigurationSingletonTest" />
       <option name="METHOD_NAME" value="configurationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingletonTest.springContainer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.singleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.core.singleton" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.singleton.SingletonTest" />
-      <option name="METHOD_NAME" value="springContainer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComponentFilterAppConfigTest.filterScan" />
         <item itemvalue="JUnit.AutoAppConfigTest.basicScan" />
         <item itemvalue="JUnit.ConfigurationSingletonTest.configurationDeep" />
         <item itemvalue="JUnit.ConfigurationSingletonTest.configurationTest" />
         <item itemvalue="JUnit.StatefulServiceTest.statefulServiceSingleton" />
-        <item itemvalue="JUnit.SingletonTest.springContainer" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +229,8 @@
       <workItem from="1664253187599" duration="2795000" />
       <workItem from="1664843334221" duration="599000" />
       <workItem from="1664858846337" duration="597000" />
-      <workItem from="1664869084066" duration="3630000" />
+      <workItem from="1664869084066" duration="3798000" />
+      <workItem from="1664928066328" duration="1189000" />
     </task>
     <task id="LOCAL-00001" summary="trasforming to Spring">
       <created>1664096607845</created>
@@ -300,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664872144272</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="탐색 위치 설정 - @ComponentScan(basePackages), 스캔 대상">
+      <created>1664873645015</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664873645015</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +345,8 @@
     <MESSAGE value="싱글톤 방식의 주의점 - 공유필드로 인한 값 변경" />
     <MESSAGE value="@Configuration과 싱글톤, CGLIB기술" />
     <MESSAGE value="@Bean 없이 자동으로 Bean 등록 - @ComponentScan" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Bean 없이 자동으로 Bean 등록 - @ComponentScan" />
+    <MESSAGE value="탐색 위치 설정 - @ComponentScan(basePackages), 스캔 대상" />
+    <option name="LAST_COMMIT_MESSAGE" value="탐색 위치 설정 - @ComponentScan(basePackages), 스캔 대상" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
